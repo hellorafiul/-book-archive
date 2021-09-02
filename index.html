@@ -12,8 +12,39 @@
 </head>
 
 <body>
+  <div class="pt-4 pb-2 text-center">
+    <h2 class="display-5">Welcome to The Library of Congress!</h2>
+    <p class="lead">Find and read more books that you love &#128151</p>
+  </div>
 
-  <h2 class="display-4 pt-4 text-center">Search Your Favourite Book!</h2>
+
+  <section class="container my-3 ">
+    <!-- Input BOX -->
+    <div class="d-flex w-50 mx-auto">
+      <input type="text" class="form-control me-2" placeholder="Type your favourite book name" id="searchInput" />
+      <button class="btn btn-dark" id="search-btn" onclick="loadBooks()">Search</button>
+    </div>
+  </section>
+
+  <!-- Error Message -->
+  <div id="error" class="text-center text-danger">
+
+  </div>
+
+  <section class="container mt-2">
+    <!-- numbers of Books -->
+    <div id="numbers-Of-books" class="lead text-center text-success">
+    </div>
+
+  </section>
+
+  <section class="container mt-2">
+    <!-- List Of Books -->
+    <div id="books-container" class="row">
+
+    </div>
+
+  </section>
 
 
   <!-- Bundle JS -->
@@ -21,7 +52,8 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <!-- Main JS -->
-  <script src="js/app.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
