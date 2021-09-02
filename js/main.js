@@ -17,12 +17,11 @@ const loadBooks = () => {
       .then(res => res.json())
       .then(data => displayBooks(data.docs))
   }
-  //Clear
+  //Clear input value
   searchInput.value = '';
 
 }
 const displayBooks = books => {
-  console.log(books.length)
   const totalBooks = books.length;
   if (totalBooks === 0) {
     numbersOfBooks.innerHTML = `<img src="img/no-result.png" alt="">`;
@@ -58,5 +57,4 @@ const displayBooks = books => {
   `;
     booksContainer.appendChild(div)
   });
-
 }
